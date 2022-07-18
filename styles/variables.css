@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #AD85FF;
+    --primary-color-translucent: #ae85ffe1;
+}
+
+:root {
+  --body-max-width: 1920px;
+}
+
+:root {
+  --navbar-height: 35px;
+  --navbar-elements-gap: 8px;
+}
+
+:root {
+  --primary-border-radius: 40px;
+}
+
+:root {
+  --cardholder-gap: 35px;
+}
+
+:root {
+  --card-padding: 35px;
+  --card-regular-image-size: 100px;
+  --card-medium-image-size: 180px;
+  --card-large-image-size: 270px;
+
+  --card-container-gap: 20px;
+}

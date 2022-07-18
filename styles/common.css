@@ -1,0 +1,26 @@
+@import "variables.css";
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Regular.woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Bold.woff2");
+    font-weight: bold;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin: auto;
+    background-color: #F5F5F5;
+    font-family: Inter;
+    max-width: var(--body-max-width);
+}
+
+::selection {
+    color: rgb(91, 0, 99);
+    background: rgba(165, 39, 255, 0.132);
+}

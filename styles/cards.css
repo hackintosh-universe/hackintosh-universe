@@ -1,0 +1,106 @@
+@import "variables.css";
+
+.cardHolder {
+  display: grid;
+  gap: var(--cardholder-gap);
+  margin-top: 60px;
+}
+
+.cardHolder .card {
+  padding: var(--card-padding);
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 5px 5px 64px 6px rgba(48, 48, 48, 0.28);
+  border-radius: var(--primary-border-radius);
+  color: #303030;
+  width: 80%;
+  margin: auto;
+}
+
+.cardHolder .card .splitView {
+    display: grid;
+    gap: var(--card-padding);
+}
+
+.cardHolder .card .splitView.imageLeft {
+    grid-template-columns: auto 1fr;
+}
+
+.cardHolder .card .splitView.imageRight {
+    grid-template-columns: 1fr auto;
+}
+
+.cardHolder .card .image {
+    transform: translate3d(0,0,0);
+    opacity: 95%;
+}
+
+.cardHolder .card .image.regular {
+    filter: drop-shadow(0px 1px 1.5px rgba(0,0,0,0.50));
+    -webkit-user-drag: none;
+    width: var(--card-regular-image-size);
+    /*height: var(--card-regular-image-size);*/
+    align-self: center;
+
+}
+
+.cardHolder .card .image.big {
+    filter: drop-shadow(0px 1px 1.5px rgba(0,0,0,0.50));
+    -webkit-user-drag: none;
+    width: 100%;
+    max-width: var(--card-large-image-size);
+    align-self: center;
+}
+
+.cardHolder .card .image.medium {
+    width: 100%;
+    max-width: var(--card-medium-image-size);
+}
+
+.cardHolder .card .container {
+    align-self: center;
+}
+
+.cardHolder .card  .title {
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 90%;
+}
+
+.cardHolder .card .text {
+    margin-top: var(--card-container-gap);
+    word-break: break-word;
+    opacity: 75%;
+}
+
+.cardHolder .card .additional {
+    margin-top: var(--card-container-gap);
+}
+
+.cardHolder .card .additional .title {
+    margin-bottom: calc(var(--card-container-gap) / 2);
+}
+
+.cardHolder .card .additional .text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cardHolder .card .additional .list {
+    display: grid;
+    gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .cardHolder .card .splitView.imageLeft,
+    .cardHolder .card .splitView.imageRight {
+        grid-template-columns: auto;
+        place-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardHolder .card {
+        width: 90%;
+    }
+}
