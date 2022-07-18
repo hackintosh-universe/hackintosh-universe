@@ -9,7 +9,7 @@
 .cardHolder .card {
   padding: var(--card-padding);
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--card-background-color);
   box-shadow: 5px 5px 64px 6px rgba(48, 48, 48, 0.28);
   border-radius: var(--primary-border-radius);
   color: #303030;
@@ -62,12 +62,14 @@
 }
 
 .cardHolder .card  .title {
+    color: var(--text-color);
     font-weight: bold;
     font-size: 20px;
     opacity: 90%;
 }
 
 .cardHolder .card .text {
+    color: var(--text-color);
     margin-top: var(--card-container-gap);
     word-break: break-word;
     opacity: 75%;

@@ -15,7 +15,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     margin: auto;
-    background-color: #F5F5F5;
+    background-color: var(--body-color);
     font-family: Inter;
     max-width: var(--body-max-width);
 }

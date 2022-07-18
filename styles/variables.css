@@ -1,10 +1,15 @@
 :root {
+    --body-color: #F5F5F5;
     --primary-color: #AD85FF;
     --primary-color-translucent: #ae85ffe1;
 }
 
 :root {
   --body-max-width: 1920px;
+}
+
+:root {
+  --text-color: rgb(48, 48, 48);
 }
 
 :root {
@@ -25,6 +30,26 @@
   --card-regular-image-size: 100px;
   --card-medium-image-size: 180px;
   --card-large-image-size: 270px;
-
   --card-container-gap: 20px;
+}
+
+:root {
+  --card-background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --body-color: background-color: rgb(30, 32, 33);
+
+      --primary-color: rgba(42, 0, 124, 1);
+      --primary-color-translucent: rgba(42, 0, 124, 0.88);;
+    }
+
+    :root {
+      --text-color: rgb(202, 197, 190);
+    }
+
+    :root {
+      --card-background-color: rgb(24, 26, 27);
+    }
 }
