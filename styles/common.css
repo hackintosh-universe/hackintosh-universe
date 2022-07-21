@@ -11,6 +11,11 @@
     font-weight: bold;
 }
 
+html {
+    scroll-padding-top: calc(var(--navbar-height) * 2); 
+    scroll-behavior: smooth;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
